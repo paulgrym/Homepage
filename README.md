@@ -8,7 +8,8 @@ From this homepage you can learn a few facts about me:
 - and why I've started Frontend course.
 ## Demo
 You can take a look at my homepage demo [here](https://paulgrym.github.io/Homepage/).
-![demo](images/Animation.gif)
+## How to use
+![How to use gif ](images/Animation.gif)
 ## Technologies
 - HTML
 - CSS
