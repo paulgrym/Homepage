@@ -1,0 +1,85 @@
+.section {
+    padding-top: 20px;
+}
+
+.section__subHeader {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(238, 87, 17);
+    text-shadow: 1px 1px 5px hsl(0, 0%, 85%, 95%);
+    font-weight: 400;
+}
+
+.section__paragraph {
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+.section--changeColorButton {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section__button {
+    background-color: rgb(238, 87, 17);
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px #888;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    flex-basis: 150px;
+}
+
+.section__button:hover {
+    background-color: rgba(238, 87, 17, 0.925);
+    box-shadow: 3px 3px 5px 3px #ddd;
+    color: rgb(245, 245, 245);
+}
+
+.section--photo {
+    text-align: center;
+}
+
+.section__photo {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 7px #eee;
+    margin-top: 0px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.section_button--photo {
+    font-size: 17px;
+    display: block;
+    margin: 0 auto;
+    min-width:110px;
+}
+
+.section--special {
+    border: 2px dotted rgb(238, 87, 17);
+    border-radius: 15px;
+    padding: 15px 15px 0px 15px;
+}
+
+.section__link {
+    text-decoration: none;
+    color: #ee5711;
+}
+
+.section__link:focus {
+    outline: 2px solid #1d1c1c;
+}
+
+.section__link:hover {
+    color: rgb(245, 154, 112);
+    outline: none
+}
+
+.section__link:active {
+    color: rgb(224, 30, 30);
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me, myself and I</title>
+    <link rel="icon" href="images/icon.png">
+    <meta property="og:image" content="images/share.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/tableContainer.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body js-body">
+    <div class="container">
+        <section class="section section--changeColorButton">
+            <button class="section__button js-changeColorButton">Ustaw <span class="js-themeName">szare</span>
+                tło</button>
+        </section>
+        <header class="header">
+            <h1 class="header_title"> My 1st web page</h1>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="#O-mnie">O mnie</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#Zainteresowania">Zainteresowania</a>
+                </li>
+                <li class="navigation__item"><a class="navigation__link" href="#Dlaczego-frontend">Dlaczego
+                        frontend?</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="section section--photo">
+                <img class="section__photo js-photoSrc" src="images/cat.JPG" alt="zdjecie kota i kobiety">
+                
+                <button class="section__button section_button--photo js-changePhotoButton"><span class="js-photoVisibility">Usuń</span>
+                    kota</button>
+                
+            </section>
+            <section class="section">
+                <h2 class="section__subHeader" id="O-mnie">O mnie</h2>
+                <div class="section--special">
+                    <p class="section__paragraph">Nazywam się Paulina, chociaż podobno rodzice skłaniali się ku
+                        Karolinie.
+                        Prawdopodobnie było to wtedy bardzo
+                        popularne imię, ponieważ obecnie pracuję z czterema Karolinami (co stanowi aż 25% teamu) w wieku
+                        zbliżonym
+                        do mojego oraz mieszkam z jedną Karoliną. Naprawdę duże stężenie Karolin w życiu 🤣. </p>
+                    <p class="section__paragraph">Mieszkam w Warszawie, ale pochodzę z <strong>Lublina</strong>. Tam
+                        ukończyłam
+                        studia na kierunku
+                        <b>budownictwo</b>. Do Warszawy przeprowadziłam się w połowie marca ubiegłego roku - wraz z
+                        rozpoczęciem
+                        pandemii, więc jeszcze nie poznałam za dużo uroków tego miasta.
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__subHeader" id="Zainteresowania">Zainteresowania</h2>
+                <p class="section__paragraph">W wolnym czasie lubię wędrować po górach, polach, wsiach i miastach oraz
+                    piec (i
+                    jeść) ciasta, ciastka,
+                    ciasteczka. Moim ulubionym deserem są ptysie z kruszonką, ale <em>nie takie z samą śmietaną</em> a w
+                    towarzystwie jakiegoś dobrego kremu -na przykład jak w tym
+                    <a class="section__link" target="blank" title="ptysie z kruszonką" rel="noreferrer noopener"
+                        href="https://www.mojewypieki.com/przepis/ptysie-z-kruszonka-z-kremem-czekoladowo-orzechowym">
+                        przepisie</a>.
+                </p>
+                <p class="section__paragraph"> W czasie pracy lub też w czasie czynności codziennych jak np. obierania
+                    ziemniaków
+                    lubię słuchać audiobooków
+                    Harrego
+                    Pottera czytane przez Jim'a Dale'a. Filmów już dawno nie miałam czasu oglądać, ale mimo tego poniżej
+                    przedstawiam
+                    zestawienie kilku różnic między książkami a filmami.</p>
+                <p>
+                <div class="tableContainer">
+                    <table class="table">
+                        <caption class="table__caption">Harry Potter - różnice między książką a filmem</caption>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Część</th>
+                            <th class="table__cell table__cell--header" scope="col">Książka</th>
+                            <th class="table__cell table__cell--header" scope="col">Film</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Kamień Filozoficzny
+                            </th>
+                            <td class="table__cell"> Harry ma zielone oczy i jest to często w książkach podkreślane</td>
+                            <td class="table__cell"> Harry ma niebieskie oczy</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Komnata Tajemnic</th>
+                            <td class="table__cell"> Pan Weasley naprawia okulary Harrego na ulicy Pokątnej</td>
+                            <td class="table__cell"> Hermiona naprawia okulary Harrego mimo, że nie powinna używać magii
+                                poza
+                                Hogwartem
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Więzień Azkabanu</th>
+                            <td class="table__cell"> Ciotka Marge nadmuchana jak balon odlatuje do sufitu pokoju</td>
+                            <td class="table__cell"> Ciotka Marge bardzo drmatycznie odlatuje ku niebu</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Czara Ognia</th>
+                            <td class="table__cell"> Zgredek dał skrzeloziele Harremu</td>
+                            <td class="table__cell"> Neville dał skrzeloziele Harremu</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Zakon Feniksa</th>
+                            <td class="table__cell"> Przyjaciółka Cho Chang wydaje Armię Dumledora</td>
+                            <td class="table__cell"> Cho Chang wydaje Armię Dumledora</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Książę Półkrwi</th>
+                            <td class="table__cell"> Tonks znajduje spetryfikowanego Harrego w pociągu</td>
+                            <td class="table__cell"> Luna znajduje Harrego w pociągu</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Harry Potter i Insygnia Śmierci</th>
+                            <td class="table__cell"> Harry naprawia swoją różdżkę przy pomocy Czarnej Różdżki i odkłada
+                                Czarną
+                                Różdżkę
+                                do
+                                grobu Dumbledora</td>
+                            <td class="table__cell"> Harry łamie na pół Czarną Różdżkę</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__subHeader" id="Dlaczego-frontend">Dlaczego frontend?</h2>
+                <p class="section__paragraph">Programowanie kusi mnie od dawna. Na studiach byłam na kursie Autocada,
+                    który
+                    pokazał, że umiejętność napisania
+                    kilku linijek kodu choćby w notatniku pozwala znacznie ułatwić prace i zaoszczędzić czas.
+                    W pracy do dzisiaj zachwycają mnie chwile w których udaje się wprowadzić usprawnienie pracy poprzez
+                    modyfikację pewnych istniejących elementów kodu. <br>
+                    Poza byciem zaciekawioną programowaniem, ważnym powodem do nauki frontendu
+                    jest chęć znalezienia branży bardziej wspierającej <i>work-life balance</i>, ale nadal takiej w
+                    której umiejętności logicznego myślenia, dokładność i poczucie estetyki są ważne. Wydaje się, że
+                    programowanie powinno spełnić te kryteria 😏.
+                </p>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p> Copyright &#169; 2021 PG</p>
+    </footer>
+</body>
+
+</html>

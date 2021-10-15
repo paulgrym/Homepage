@@ -1,0 +1,10 @@
+.header {
+    color: rgb(238, 87, 17);
+    text-align: center;
+    text-shadow: 1px 1px 3px hsl(0, 0%, 85%, 95%);
+}
+
+.header_title {
+    font-weight: 400;
+    margin-top: 0px;
+}
