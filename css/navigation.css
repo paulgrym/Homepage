@@ -7,7 +7,7 @@
     line-height: 1.5;
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .navigation__item {
@@ -21,12 +21,13 @@
 }
 
 .navigation__link:focus {
-    outline: 2px solid #1d1c1c;
+    outline: 2px solid hsl(60, 1%, 20%);
+    border-radius: 5px;
 }
 
 .navigation__link:hover {
     color: rgb(245, 154, 112);
-  
+    outline: none
 }
 
 .navigation__link:active {

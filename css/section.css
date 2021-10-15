@@ -57,7 +57,7 @@
     font-size: 17px;
     display: block;
     margin: 0 auto;
-    min-width:110px;
+    min-width: 110px;
 }
 
 .section--special {
@@ -72,7 +72,8 @@
 }
 
 .section__link:focus {
-    outline: 2px solid #1d1c1c;
+    outline: 2px solid hsl(60, 1%, 20%);
+    border-radius: 5px;
 }
 
 .section__link:hover {
