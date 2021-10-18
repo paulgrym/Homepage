@@ -10,7 +10,8 @@
     <meta property="og:image" content="images/share.png">
     <meta property="og:title" content="Homepage">
     <meta property="og:url" content="https://paulgrym.github.io/Homepage/">
-    <meta property="og:description" content="This is the task that I'm doing as a part of a Frontend Developer course. From this homepage you can learn a few facts about me: who I am, where I'm coming from, what I'm intrested in and why I've started Frontend course.">
+    <meta property="og:description"
+        content="This is the task that I'm doing as a part of a Frontend Developer course. From this homepage you can learn a few facts about me: who I am, where I'm coming from, what I'm intrested in and why I've started Frontend course.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,8 +30,8 @@
 
 <body class="body js-body">
     <div class="container">
-        <section class="section section--changeColorButton">
-            <button class="section__button js-changeColorButton">Ustaw <span class="js-themeName">szare</span>
+        <section class="section section--toggleBackgroundColor">
+            <button class="section__button js-toggleBackgroundButton">Ustaw <span class="js-themeName">szare</span>
                 tło</button>
         </section>
         <header class="header">
@@ -48,7 +49,7 @@
         </nav>
         <main>
             <section class="section section--photo">
-                <img class="section__photo js-photoSrc" src="images/cat.JPG" alt="zdjecie kota i kobiety">
+                <img class="section__photo js-photoElement" src="images/cat.JPG" alt="zdjecie kota i kobiety">
 
                 <button class="section__button section_button--photo js-changePhotoButton"><span
                         class="js-photoVisibility">Usuń</span>
@@ -57,7 +58,7 @@
             </section>
             <section class="section">
                 <h2 class="section__subHeader" id="O-mnie">O mnie</h2>
-                <div class="section--special">
+                <div class="section--withBorder">
                     <p class="section__paragraph">Nazywam się Paulina, chociaż podobno rodzice skłaniali się ku
                         Karolinie.
                         Prawdopodobnie było to wtedy bardzo
@@ -163,7 +164,7 @@
         </main>
     </div>
     <footer class="footer">
-        <p> Copyright &#169; 2021 PG</p>
+        <p class=footer_paragraph> Copyright &#169; 2021 PG</p>
     </footer>
 </body>
 

@@ -17,7 +17,7 @@
     line-height: 1.5;
 }
 
-.section--changeColorButton {
+.section--toggleBackgroundColor {
     padding-top: 10px;
     display: flex;
     justify-content: flex-end;
@@ -60,7 +60,7 @@
     min-width: 110px;
 }
 
-.section--special {
+.section--withBorder {
     border: 2px dotted rgb(238, 87, 17);
     border-radius: 15px;
     padding: 15px 15px 0px 15px;

@@ -11,8 +11,8 @@
     };
 
     const init = () => {
-        const changeColorButton = document.querySelector(".js-changeColorButton");
-        changeColorButton.addEventListener("click", toggleBackgroundColor);
+        const toggleBackgroundColorButton = document.querySelector(".js-toggleBackgroundButton");
+        toggleBackgroundColorButton.addEventListener("click", toggleBackgroundColor);
         welcome();
     };
     init();
@@ -21,10 +21,20 @@
 
 {
     const togglePhoto = () => {
-        const photoSource = document.querySelector(".js-photoSrc");
+        const photoSource = document.querySelector(".js-photoElement");
         const photoVisibility = document.querySelector(".js-photoVisibility");
-        photoSource.src.includes("images/cat.JPG") ? (photoSource.src = "images/me.jpg") : (photoSource.src = "images/cat.JPG");
-        photoVisibility.innerText = photoSource.src.includes("images/cat.JPG") ? ("Usuń") : ("Pokaż");
+
+        if (photoSource.src.includes("images/cat.JPG")) {
+            photoSource.src = "images/me.jpg";
+        } else {
+            photoSource.src = "images/cat.JPG";
+        };
+
+        if (photoSource.src.includes("images/cat.JPG")) {
+            photoVisibility.innerText = "Usuń";
+        } else {
+            photoVisibility.innerText = "Pokaż";
+        };
     }
 
     const initPhoto = () => {
